@@ -4,9 +4,9 @@ import HourlyCalculator from "@/components/HourlyCalculator";
 import { HOURLY_RATES, calcEarnings, formatMoney } from "@/lib/hourlyRates";
 
 export const metadata: Metadata = {
-  title: "Hourly to Annual Salary Calculator 2025 — SalaryTool.org",
+  title: "Hourly to Annual Salary Calculator 2025 — Free Wage Calculator",
   description:
-    "Convert your hourly wage to annual salary instantly. See weekly, monthly and yearly earnings for any hourly rate. Free hourly to salary calculator updated for 2025.",
+    "Free hourly to annual salary calculator. Convert any hourly wage to yearly, monthly and weekly salary instantly. Updated for 2025.",
   alternates: { canonical: "https://salarytool.org/hourly-to-annual" },
   openGraph: {
     title: "Hourly to Annual Salary Calculator 2025",

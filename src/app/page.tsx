@@ -3,14 +3,14 @@ import Link from "next/link";
 import { STATES } from "@/lib/stateData";
 
 export const metadata: Metadata = {
-  title: "Free Paycheck Calculator by State 2025 — SalaryTool.org",
+  title: "Free Salary & Paycheck Calculator by State 2025 — SalaryTool.org",
   description:
-    "Calculate your exact take-home pay for all 50 US states. Free paycheck calculator with federal and state income tax, Social Security, and Medicare. Updated for 2025.",
+    "Free salary calculator for all 50 US states. Calculate your exact take-home pay after federal and state income tax, Social Security, and Medicare. Updated for 2025.",
   alternates: { canonical: "https://salarytool.org" },
   openGraph: {
-    title: "Free Paycheck Calculator by State 2025",
+    title: "Free Salary & Paycheck Calculator by State 2025",
     description:
-      "Calculate your exact take-home pay for all 50 US states. Free, instant, updated for 2025.",
+      "Free salary calculator for all 50 US states. Instant take-home pay, updated for 2025.",
     url: "https://salarytool.org",
     siteName: "SalaryTool.org",
     type: "website",
@@ -28,7 +28,7 @@ export default function HomePage() {
       <div className="bg-white border-b border-gray-100">
         <div className="max-w-5xl mx-auto px-4 py-16 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-            Paycheck Calculator
+            Free Salary Calculator
             <br />
             <span className="text-blue-600">For Every US State</span>
           </h1>

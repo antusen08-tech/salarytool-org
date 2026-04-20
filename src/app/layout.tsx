@@ -16,6 +16,12 @@ export const metadata: Metadata = {
   keywords: ["paycheck calculator", "salary calculator", "take home pay", "income tax calculator"],
   authors: [{ name: "SalaryTool.org" }],
   robots: { index: true, follow: true },
+  twitter: {
+    card: "summary",
+    site: "@salarytool",
+    title: "Free Salary Calculator by State 2025 — SalaryTool.org",
+    description: "Calculate your exact take-home pay for all 50 US states. Free, updated for 2025.",
+  },
   verification: {
     other: { "impact-site-verification": "deb71713-22c2-4586-b7e1-65c4da3fe027" },
   },

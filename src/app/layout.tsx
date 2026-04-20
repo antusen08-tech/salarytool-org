@@ -22,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={inter.variable}>
       <head>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2752875256706783" crossOrigin="anonymous" />
+        <meta name="impact-site-verification" content="deb71713-22c2-4586-b7e1-65c4da3fe027" />
       </head>
       <body className="min-h-screen bg-gray-50 font-sans antialiased">
         {/* Site header */}

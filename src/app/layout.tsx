@@ -80,7 +80,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <a href="/new-york" className="hover:text-gray-600">New York</a>
               </div>
             </div>
-            <p className="text-xs text-gray-300 mt-6 text-center">
+            <div className="flex justify-center gap-4 mt-6 text-xs text-gray-400">
+              <a href="/privacy" className="hover:text-gray-600">Privacy Policy</a>
+              <a href="/disclaimer" className="hover:text-gray-600">Disclaimer</a>
+              <a href="/terms" className="hover:text-gray-600">Terms of Use</a>
+            </div>
+            <p className="text-xs text-gray-300 mt-3 text-center">
               Results are estimates only. Tax laws change — verify with a licensed tax professional.
               © {new Date().getFullYear()} SalaryTool.org
             </p>

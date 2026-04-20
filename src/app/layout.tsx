@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import ImpactScript from "@/components/ImpactScript";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -15,16 +16,24 @@ export const metadata: Metadata = {
   keywords: ["paycheck calculator", "salary calculator", "take home pay", "income tax calculator"],
   authors: [{ name: "SalaryTool.org" }],
   robots: { index: true, follow: true },
+  verification: {
+    other: { "impact-site-verification": "deb71713-22c2-4586-b7e1-65c4da3fe027" },
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={inter.variable}>
       <head>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2752875256706783" crossOrigin="anonymous" />
-        <meta name="impact-site-verification" content="deb71713-22c2-4586-b7e1-65c4da3fe027" />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2752875256706783"
+          crossOrigin="anonymous"
+        />
       </head>
       <body className="min-h-screen bg-gray-50 font-sans antialiased">
+        <ImpactScript />
+
         {/* Site header */}
         <header className="bg-white border-b border-gray-100 sticky top-0 z-50">
           <div className="max-w-5xl mx-auto px-4 h-14 flex items-center justify-between">
@@ -33,18 +42,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <span className="text-gray-400 font-normal text-sm">.org</span>
             </a>
             <nav className="flex items-center gap-6 text-sm text-gray-500">
-              <a href="/" className="hover:text-blue-600 transition-colors">
-                All States
-              </a>
-              <a href="/california" className="hover:text-blue-600 transition-colors hidden sm:block">
-                California
-              </a>
-              <a href="/texas" className="hover:text-blue-600 transition-colors hidden sm:block">
-                Texas
-              </a>
-              <a href="/new-york" className="hover:text-blue-600 transition-colors hidden sm:block">
-                New York
-              </a>
+              <a href="/" className="hover:text-blue-600 transition-colors">All States</a>
+              <a href="/california" className="hover:text-blue-600 transition-colors hidden sm:block">California</a>
+              <a href="/texas" className="hover:text-blue-600 transition-colors hidden sm:block">Texas</a>
+              <a href="/new-york" className="hover:text-blue-600 transition-colors hidden sm:block">New York</a>
             </nav>
           </div>
         </header>

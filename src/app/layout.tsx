@@ -47,6 +47,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <a href="/texas" className="hover:text-blue-600 transition-colors hidden sm:block">Texas</a>
               <a href="/new-york" className="hover:text-blue-600 transition-colors hidden sm:block">New York</a>
               <a href="/minimum-wage" className="hover:text-blue-600 transition-colors hidden sm:block">Min. Wage</a>
+              <a href="/hourly-to-annual" className="hover:text-blue-600 transition-colors hidden sm:block">Hourly</a>
             </nav>
           </div>
         </header>

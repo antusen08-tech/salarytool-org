@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { STATES } from "@/lib/stateData";
+import { HOURLY_RATES } from "@/lib/hourlyRates";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://salarytool.org";
@@ -26,6 +27,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     ...STATES.map((state) => ({
       url: `${base}/minimum-wage/${state.slug}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
+    {
+      url: `${base}/hourly-to-annual`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.9,
+    },
+    ...HOURLY_RATES.map((r) => ({
+      url: `${base}/hourly-to-annual/${r.slug}`,
       lastModified: now,
       changeFrequency: "monthly" as const,
       priority: 0.8,
